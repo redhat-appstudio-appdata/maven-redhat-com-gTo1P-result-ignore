@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: code-with-quarkus-hola-iefs
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:gTo1P-code-with-quarkus-hola-iefs
+      - image: quay.io/redhat-appstudio/user-workload@sha256:807f1781e09114ae7d4f80b4adf59d5f87f5abee5366b5096521b4fc410584f8
         name: my-java-quarkus
         ports:
         - containerPort: 8081
