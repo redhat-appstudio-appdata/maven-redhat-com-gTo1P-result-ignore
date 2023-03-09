@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: code-with-quarkus-hola-iefs
+  namespace: burrzinga-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:807f1781e09114ae7d4f80b4adf59d5f87f5abee5366b5096521b4fc410584f8
+        name: my-java-quarkus
+        resources: {}
+status: {}
